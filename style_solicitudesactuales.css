@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr[data-estado="aprobada"] {
+  background-color: #5ecc5e; /* Verde */
+}
+
+tr[data-estado="pendiente"] {
+  background-color: rgb(241, 226, 14); /* Amarillo */
+}
+
+tr[data-estado="rechazada"] {
+  background-color: #FF6961; /* Rojo */
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.button-back {
+  float: right;
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 10px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+}
+
+/* Cambiar el color al pasar el ratón sobre el botón */
+.button-back {
+  background-color: rgb(71, 13, 5)
+}
+
+.button-back:hover {
+  background-color: rgb(39, 7, 3)
+}

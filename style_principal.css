@@ -1,0 +1,92 @@
+#hero {
+  min-height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+
+
+video {
+  position: fixed;
+  top: 0;
+  
+  width: 100%; /* Ajusta el ancho */
+  height: 100%;
+  object-fit: fill;
+  z-index: -3;
+}
+
+#login-container {
+  min-height: 1000px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 800px;
+  margin: 200px auto 0;
+  position: relative;
+  margin-top: 100px; /* Ajustar según sea necesario */
+  z-index: 3;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-family: Arial, sans-serif; /* Cambiar la fuente de la letra */
+  color: white; /* Cambiar el color de la letra */
+}
+
+form {
+  margin-top: 300px;
+  margin-left: 100px;
+  width: 100%;
+  max-width: 600px;
+  border: 5px solid #2b42a8;
+  padding: 20px;
+  background-color: #05043d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+label[for="username"],
+label[for="password"] {
+  color: white;
+}

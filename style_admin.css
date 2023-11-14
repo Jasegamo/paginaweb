@@ -1,0 +1,111 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0 100px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #3498db;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  width: 100px;
+}
+
+button.aprobado {
+  background-color: #27ae60;
+  &:hover {
+    background-color: #094625; /* Cambia el color al pasar el mouse */
+    /* Agrega otros estilos hover según sea necesario */
+  }
+}
+
+button.rechazado {
+  background-color: #e74c3c;
+  &:hover {
+    background-color: #630a07; /* Cambia el color al pasar el mouse */
+    /* Agrega otros estilos hover según sea necesario */
+  }
+}
+
+.container-calendar {
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.calendar, .codetext, .btn_search {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="date"], input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tabla-solicitudes {
+  background-color: #fff;
+}
+
+tr[data-estado="aprobada"] {
+  background-color: #5ecc5e; /* Verde */
+}
+
+tr[data-estado="rechazada"] {
+  background-color: #FF6961; /* Rojo */
+}
+
+.button-logout {
+  float: right;
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 15px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 10px; /* Margen externo */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+}
+
+/* Cambiar el color al pasar el ratón sobre el botón */
+.button-logout {
+  background-color: rgb(71, 13, 5)
+}
+
+.button-logout:hover {
+  background-color: rgb(39, 7, 3)
+}
