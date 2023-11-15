@@ -1,0 +1,22 @@
+version: '3'
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: Dockerfile.apache
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: prestamos_escenarios
+      MYSQL_USER: nombre_de_usuario
+      MYSQL_PASSWORD: contraseña

@@ -1,0 +1,12 @@
+# Usa una imagen base de Apache
+FROM httpd:2.4
+
+# Copia tu código fuente al directorio del servidor web de Apache
+COPY . /usr/local/apache2/htdocs/
+
+
+# Expón el puerto 8080
+EXPOSE 8080
+
+# Indica que Apache debe ejecutarse en primer plano
+CMD ["httpd-foreground"]
